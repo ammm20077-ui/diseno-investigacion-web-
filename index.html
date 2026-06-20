@@ -1,0 +1,766 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Diseño de la Investigación | Guía Interactiva</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .svg-img { width:100%; border-radius:12px; border:1px solid var(--border); margin-top:10px; display:block; }
+    .audio-label { color: var(--muted); font-size:12px; margin-top:6px; }
+    audio { width:100%; margin-top:8px; border-radius:8px; }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container header__wrap">
+      <div class="brand">
+        <span class="brand__icon">📚</span>
+        <h1 class="brand__title">El Diseño de la Investigación</h1>
+        <p class="brand__subtitle">Cuantitativo · Cualitativo · Mixto — Aprende navegando</p>
+      </div>
+
+      <nav class="nav">
+        <a href="#inicio" class="nav__link">🏠 Inicio</a>
+        <a href="#cuantitativos" class="nav__link">📊 Cuantitativos</a>
+        <a href="#cualitativos" class="nav__link">🗣️ Cualitativos</a>
+        <a href="#mixtos" class="nav__link">🔀 Mixtos</a>
+        <a href="#resumen" class="nav__link nav__link--cta">✅ Resumen</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- Hero -->
+    <section class="hero" id="inicio">
+      <div class="hero__card">
+        <h2>🎯 ¿Qué es el diseño de la investigación?</h2>
+        <p>
+          Es el plan que guía <b>cómo</b> vas a responder tu problema:
+          define el <b>enfoque</b> (cuantitativo/cualitativo/mixto), el <b>tipo de recolección</b>,
+          la <b>organización del tiempo</b> y los <b>procedimientos</b> de análisis.
+        </p>
+
+        <div class="badges">
+          <span class="badge">🔎 Según el enfoque</span>
+          <span class="badge">🧠 Según el problema</span>
+          <span class="badge">⏳ Según el contexto</span>
+        </div>
+
+        <div class="mediaRow">
+          <div class="mediaBlock">
+            <h3>📽️ Introducción: Los 3 enfoques</h3>
+            <iframe
+              width="100%" height="240"
+              src="https://www.youtube.com/embed/Os5OZKEe7S0"
+              title="Métodos de Investigación: Cuantitativo, Cualitativo y Mixto"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+          </div>
+
+          <div class="mediaBlock">
+            <h3>🎧 Audio: Diseños cuantitativos</h3>
+            <audio controls>
+              <source src="audio/teoria-cuantitativa.mp3" type="audio/mpeg" />
+              Tu navegador no soporta audio.
+            </audio>
+            <p class="audio-label">🔊 Narración sobre el enfoque cuantitativo (generado por IA)</p>
+          </div>
+        </div>
+      </div>
+
+      <aside class="hero__media">
+        <h3>🖼️ Los tres enfoques de investigación</h3>
+        <!-- SVG illustration: three research approaches -->
+        <svg class="svg-img" viewBox="0 0 400 260" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="bgHero" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#0b1220"/>
+              <stop offset="100%" stop-color="#12193a"/>
+            </linearGradient>
+            <linearGradient id="gCuant" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#4dd4ff" stop-opacity="0.9"/>
+              <stop offset="100%" stop-color="#4dd4ff" stop-opacity="0.3"/>
+            </linearGradient>
+            <linearGradient id="gCual" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#7c5cff" stop-opacity="0.9"/>
+              <stop offset="100%" stop-color="#7c5cff" stop-opacity="0.3"/>
+            </linearGradient>
+            <linearGradient id="gMix" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#ff6eb4" stop-opacity="0.9"/>
+              <stop offset="100%" stop-color="#ff6eb4" stop-opacity="0.3"/>
+            </linearGradient>
+          </defs>
+          <rect width="400" height="260" fill="url(#bgHero)" rx="12"/>
+          <!-- Title -->
+          <text x="200" y="30" text-anchor="middle" fill="#e9eeff" font-size="14" font-weight="bold" font-family="system-ui">Enfoques de Investigación</text>
+          <!-- Cuantitativo -->
+          <rect x="20" y="50" width="110" height="170" rx="12" fill="url(#gCuant)" fill-opacity="0.15" stroke="#4dd4ff" stroke-width="1.5"/>
+          <text x="75" y="80" text-anchor="middle" fill="#4dd4ff" font-size="22">📊</text>
+          <text x="75" y="102" text-anchor="middle" fill="#4dd4ff" font-size="11" font-weight="bold" font-family="system-ui">CUANTITATIVO</text>
+          <text x="75" y="122" text-anchor="middle" fill="#a7b3d1" font-size="10" font-family="system-ui">Datos numéricos</text>
+          <text x="75" y="138" text-anchor="middle" fill="#a7b3d1" font-size="10" font-family="system-ui">Medición</text>
+          <text x="75" y="154" text-anchor="middle" fill="#a7b3d1" font-size="10" font-family="system-ui">Estadística</text>
+          <text x="75" y="170" text-anchor="middle" fill="#a7b3d1" font-size="10" font-family="system-ui">Hipótesis</text>
+          <!-- Bar mini chart -->
+          <rect x="40" y="195" width="12" height="16" rx="2" fill="#4dd4ff" fill-opacity="0.7"/>
+          <rect x="58" y="186" width="12" height="25" rx="2" fill="#4dd4ff" fill-opacity="0.85"/>
+          <rect x="76" y="190" width="12" height="21" rx="2" fill="#4dd4ff" fill-opacity="0.6"/>
+          <rect x="94" y="182" width="12" height="29" rx="2" fill="#4dd4ff"/>
+          <!-- Cualitativo -->
+          <rect x="145" y="50" width="110" height="170" rx="12" fill="url(#gCual)" fill-opacity="0.15" stroke="#7c5cff" stroke-width="1.5"/>
+          <text x="200" y="80" text-anchor="middle" fill="#7c5cff" font-size="22">🗣️</text>
+          <text x="200" y="102" text-anchor="middle" fill="#7c5cff" font-size="11" font-weight="bold" font-family="system-ui">CUALITATIVO</text>
+          <text x="200" y="122" text-anchor="middle" fill="#a7b3d1" font-size="10" font-family="system-ui">Significados</text>
+          <text x="200" y="138" text-anchor="middle" fill="#a7b3d1" font-size="10" font-family="system-ui">Experiencias</text>
+          <text x="200" y="154" text-anchor="middle" fill="#a7b3d1" font-size="10" font-family="system-ui">Contexto</text>
+          <text x="200" y="170" text-anchor="middle" fill="#a7b3d1" font-size="10" font-family="system-ui">Interpretación</text>
+          <!-- Speech bubbles -->
+          <ellipse cx="175" cy="198" rx="18" ry="10" fill="#7c5cff" fill-opacity="0.3" stroke="#7c5cff" stroke-width="1"/>
+          <ellipse cx="200" cy="207" rx="14" ry="8" fill="#7c5cff" fill-opacity="0.5" stroke="#7c5cff" stroke-width="1"/>
+          <ellipse cx="222" cy="198" rx="11" ry="9" fill="#7c5cff" fill-opacity="0.4" stroke="#7c5cff" stroke-width="1"/>
+          <!-- Mixto -->
+          <rect x="270" y="50" width="110" height="170" rx="12" fill="url(#gMix)" fill-opacity="0.15" stroke="#ff6eb4" stroke-width="1.5"/>
+          <text x="325" y="80" text-anchor="middle" fill="#ff6eb4" font-size="22">🔀</text>
+          <text x="325" y="102" text-anchor="middle" fill="#ff6eb4" font-size="11" font-weight="bold" font-family="system-ui">MIXTO</text>
+          <text x="325" y="122" text-anchor="middle" fill="#a7b3d1" font-size="10" font-family="system-ui">Integración</text>
+          <text x="325" y="138" text-anchor="middle" fill="#a7b3d1" font-size="10" font-family="system-ui">Triangulación</text>
+          <text x="325" y="154" text-anchor="middle" fill="#a7b3d1" font-size="10" font-family="system-ui">Rigor + Riqueza</text>
+          <text x="325" y="170" text-anchor="middle" fill="#a7b3d1" font-size="10" font-family="system-ui">Complementario</text>
+          <!-- Venn circles -->
+          <circle cx="313" cy="200" r="12" fill="#4dd4ff" fill-opacity="0.3" stroke="#4dd4ff" stroke-width="1"/>
+          <circle cx="325" cy="200" r="12" fill="#7c5cff" fill-opacity="0.3" stroke="#7c5cff" stroke-width="1"/>
+          <!-- Arrows between cards -->
+          <path d="M130 135 L145 135" stroke="#e9eeff" stroke-width="1.5" stroke-dasharray="3,2" marker-end="url(#arr)"/>
+          <path d="M255 135 L270 135" stroke="#e9eeff" stroke-width="1.5" stroke-dasharray="3,2" marker-end="url(#arr)"/>
+          <defs>
+            <marker id="arr" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto">
+              <path d="M0,0 L6,3 L0,6 Z" fill="#e9eeff" fill-opacity="0.5"/>
+            </marker>
+          </defs>
+          <!-- Bottom label -->
+          <text x="200" y="248" text-anchor="middle" fill="#a7b3d1" font-size="9" font-family="system-ui">Hernández-Sampieri, R. &amp; Mendoza, C. (2018)</text>
+        </svg>
+        <p class="muted">Ilustración de los tres grandes enfoques metodológicos.</p>
+
+        <div class="searchWrap">
+          <h3>🔎 Buscador de temas</h3>
+          <p class="muted">Escribe una palabra (ej: "transeccional", "etnografía", "aleatoria").</p>
+          <input id="searchInput" type="search" placeholder="Buscar en el contenido..." autocomplete="off" />
+          <div class="searchMeta">
+            <span id="resultsCount" class="pill">0 resultados</span>
+            <button id="clearBtn" class="btn btn--ghost" type="button">🧹 Limpiar</button>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <!-- ====== CUANTITATIVOS ====== -->
+    <section class="section" id="cuantitativos">
+      <div class="section__head">
+        <h2>📊 Diseños Cuantitativos</h2>
+        <p>Se basan en medición y análisis con datos numéricos.</p>
+      </div>
+
+      <div class="grid grid--2">
+        <div class="card">
+          <h3>🧩 Mapa rápido</h3>
+          <ul class="list">
+            <li>✅ Experimentales</li>
+            <li>✅ No experimentales</li>
+            <li>📷 Transeccionales</li>
+            <li>⏳ Longitudinales</li>
+            <li>🗂️ Retrospectivos</li>
+            <li>📈 Prospectivos</li>
+          </ul>
+        </div>
+
+        <div class="card card--soft">
+          <h3>🖼️ Clasificación de diseños cuantitativos</h3>
+          <!-- SVG: quantitative design tree -->
+          <svg class="svg-img" viewBox="0 0 380 220" xmlns="http://www.w3.org/2000/svg">
+            <rect width="380" height="220" fill="#0d1628" rx="10"/>
+            <!-- Root -->
+            <rect x="130" y="10" width="120" height="32" rx="8" fill="#4dd4ff" fill-opacity="0.2" stroke="#4dd4ff" stroke-width="1.5"/>
+            <text x="190" y="31" text-anchor="middle" fill="#4dd4ff" font-size="11" font-weight="bold" font-family="system-ui">CUANTITATIVO</text>
+            <!-- Lines from root -->
+            <line x1="150" y1="42" x2="80" y2="72" stroke="#4dd4ff" stroke-width="1" stroke-opacity="0.5"/>
+            <line x1="230" y1="42" x2="300" y2="72" stroke="#4dd4ff" stroke-width="1" stroke-opacity="0.5"/>
+            <!-- Experimental -->
+            <rect x="28" y="72" width="104" height="30" rx="8" fill="#7c5cff" fill-opacity="0.25" stroke="#7c5cff" stroke-width="1.2"/>
+            <text x="80" y="91" text-anchor="middle" fill="#b59fff" font-size="10" font-weight="bold" font-family="system-ui">EXPERIMENTAL</text>
+            <!-- No Experimental -->
+            <rect x="248" y="72" width="116" height="30" rx="8" fill="#4dd4ff" fill-opacity="0.2" stroke="#4dd4ff" stroke-width="1.2"/>
+            <text x="306" y="91" text-anchor="middle" fill="#7de8ff" font-size="10" font-weight="bold" font-family="system-ui">NO EXPERIMENTAL</text>
+            <!-- Sub experimental -->
+            <line x1="50" y1="102" x2="40" y2="128" stroke="#7c5cff" stroke-width="1" stroke-opacity="0.5"/>
+            <line x1="80" y1="102" x2="80" y2="128" stroke="#7c5cff" stroke-width="1" stroke-opacity="0.5"/>
+            <line x1="110" y1="102" x2="120" y2="128" stroke="#7c5cff" stroke-width="1" stroke-opacity="0.5"/>
+            <rect x="10" y="128" width="58" height="24" rx="6" fill="#7c5cff" fill-opacity="0.15" stroke="#7c5cff" stroke-width="1"/>
+            <text x="39" y="144" text-anchor="middle" fill="#b59fff" font-size="8.5" font-family="system-ui">Pre-exp.</text>
+            <rect x="52" y="128" width="58" height="24" rx="6" fill="#7c5cff" fill-opacity="0.15" stroke="#7c5cff" stroke-width="1"/>
+            <text x="81" y="144" text-anchor="middle" fill="#b59fff" font-size="8.5" font-family="system-ui">Cuasi-exp.</text>
+            <rect x="95" y="128" width="58" height="24" rx="6" fill="#7c5cff" fill-opacity="0.15" stroke="#7c5cff" stroke-width="1"/>
+            <text x="124" y="144" text-anchor="middle" fill="#b59fff" font-size="8.5" font-family="system-ui">Verdadero</text>
+            <!-- Sub no experimental -->
+            <line x1="270" y1="102" x2="260" y2="128" stroke="#4dd4ff" stroke-width="1" stroke-opacity="0.5"/>
+            <line x1="306" y1="102" x2="306" y2="128" stroke="#4dd4ff" stroke-width="1" stroke-opacity="0.5"/>
+            <line x1="342" y1="102" x2="352" y2="128" stroke="#4dd4ff" stroke-width="1" stroke-opacity="0.5"/>
+            <rect x="230" y="128" width="58" height="24" rx="6" fill="#4dd4ff" fill-opacity="0.12" stroke="#4dd4ff" stroke-width="1"/>
+            <text x="259" y="144" text-anchor="middle" fill="#7de8ff" font-size="8.5" font-family="system-ui">Transeccional</text>
+            <rect x="274" y="128" width="58" height="24" rx="6" fill="#4dd4ff" fill-opacity="0.12" stroke="#4dd4ff" stroke-width="1"/>
+            <text x="303" y="144" text-anchor="middle" fill="#7de8ff" font-size="8.5" font-family="system-ui">Longitudinal</text>
+            <rect x="319" y="128" width="56" height="24" rx="6" fill="#4dd4ff" fill-opacity="0.12" stroke="#4dd4ff" stroke-width="1"/>
+            <text x="347" y="144" text-anchor="middle" fill="#7de8ff" font-size="8.5" font-family="system-ui">Retro/Pros</text>
+            <!-- Legend line -->
+            <text x="190" y="210" text-anchor="middle" fill="#a7b3d1" font-size="9" font-family="system-ui">Clasificación de diseños cuantitativos</text>
+          </svg>
+        </div>
+      </div>
+
+      <div class="accordions" data-section="cuantitativos">
+        <!-- 1.1 Experimentales -->
+        <details class="accordion" data-keywords="experimentales variable independiente grupo control asignación aleatoria causa efecto">
+          <summary>1.1 🧪 Diseños Experimentales (causa y efecto)</summary>
+          <p>
+            Permiten establecer relaciones de <b>causa y efecto</b> controlando la intervención
+            sobre una <b>variable independiente</b>.
+          </p>
+
+          <div class="twoCols">
+            <ul class="list">
+              <li>👥 Grupo experimental y grupo control</li>
+              <li>🎲 Asignación aleatoria</li>
+              <li>🛡️ Control de variables externas</li>
+              <li>📏 Medición de variable dependiente</li>
+            </ul>
+
+            <div>
+              <h4>🎥 Diseños experimentales vs no experimentales</h4>
+              <iframe
+                width="100%" height="210"
+                src="https://www.youtube.com/embed/T88tqrrrNS8"
+                title="Diferencias cuantitativo cualitativo mixto"
+                frameborder="0"
+                allowfullscreen>
+              </iframe>
+            </div>
+          </div>
+        </details>
+
+        <details class="accordion" data-keywords="pre-experimental una sola medición pre y posprueba grupo estático validez interna limitada">
+          <summary>⏳ 1.1.1 Diseños Pre-experimentales</summary>
+          <p>
+            No emplean asignación aleatoria ni control riguroso. Se usan como aproximación inicial
+            con <b>validez interna limitada</b>.
+          </p>
+
+          <ul class="list">
+            <li>❌ Falta grupo de control equivalente</li>
+            <li>🧪 Manipulación de variable independiente</li>
+            <li>📏 Medición de variable dependiente</li>
+            <li>⚠️ Factores externos pueden influir</li>
+          </ul>
+
+          <div class="example">
+            <b>Ejemplo:</b> evaluar rendimiento después de una intervención sin medición previa ni grupo comparación.
+          </div>
+        </details>
+
+        <details class="accordion" data-keywords="cuasi-experimental no aleatorización grupos ya existen series temporales interrumpidas cohortes">
+          <summary>⚖️ 1.1.2 Diseños Cuasi-experimentales</summary>
+          <p>
+            Buscan causalidad, pero <b>no usan asignación aleatoria</b>. Los grupos existen antes del estudio.
+          </p>
+
+          <div class="twoCols">
+            <ul class="list">
+              <li>✅ Útiles si aleatorizar no es práctico o ético</li>
+              <li>🌍 Estudian el mundo real</li>
+              <li>📌 Evidencia fuerte si el diseño es sólido</li>
+            </ul>
+
+            <div>
+              <!-- SVG: cuasi experimental diagram -->
+              <svg viewBox="0 0 240 130" xmlns="http://www.w3.org/2000/svg" style="width:100%;border-radius:10px;margin-top:6px">
+                <rect width="240" height="130" fill="#0d1628" rx="8"/>
+                <rect x="10" y="20" width="100" height="36" rx="8" fill="#7c5cff" fill-opacity="0.2" stroke="#7c5cff" stroke-width="1.2"/>
+                <text x="60" y="43" text-anchor="middle" fill="#b59fff" font-size="10" font-family="system-ui">Grupo A (existente)</text>
+                <rect x="10" y="68" width="100" height="36" rx="8" fill="#4dd4ff" fill-opacity="0.15" stroke="#4dd4ff" stroke-width="1.2"/>
+                <text x="60" y="91" text-anchor="middle" fill="#7de8ff" font-size="10" font-family="system-ui">Grupo B (existente)</text>
+                <text x="130" y="38" fill="#e9eeff" font-size="11" font-family="system-ui">→ Intervención</text>
+                <text x="130" y="88" fill="#a7b3d1" font-size="11" font-family="system-ui">→ Sin intervención</text>
+                <text x="120" y="120" text-anchor="middle" fill="#a7b3d1" font-size="8" font-family="system-ui">Sin asignación aleatoria</text>
+              </svg>
+            </div>
+          </div>
+
+          <details class="nested">
+            <summary>📌 Tipos (cuasi-experimentales)</summary>
+            <ul class="list">
+              <li>Grupo de control no equivalente</li>
+              <li>Series temporales interrumpidas</li>
+              <li>Diseños de cohortes</li>
+              <li>Diseños de casos únicos</li>
+            </ul>
+          </details>
+        </details>
+
+        <details class="accordion" data-keywords="experimental verdadero asignación aleatoria control de variables causa efecto placebo">
+          <summary>✅ 1.1.3 Diseño Experimental Verdadero</summary>
+          <p>
+            Manipula variables y controla otras variables mediante <b>asignación aleatoria</b>.
+          </p>
+
+          <ul class="list">
+            <li>🧪 Manipulación intencional</li>
+            <li>🎲 Aleatorización</li>
+            <li>🛡️ Control de variables extrañas</li>
+          </ul>
+
+          <div class="twoCols">
+            <div>
+              <h4>🎧 Audio: enfoque cuantitativo</h4>
+              <audio controls>
+                <source src="audio/teoria-cuantitativa.mp3" type="audio/mpeg" />
+              </audio>
+              <p class="audio-label">🔊 Narración generada por síntesis de voz</p>
+            </div>
+            <div>
+              <h4>🎥 Diseño de investigación explicado</h4>
+              <iframe
+                width="100%" height="210"
+                src="https://www.youtube.com/embed/tRx6Ow8SCko"
+                title="Diseño metodológico cuantitativo, cualitativo y mixto"
+                frameborder="0"
+                allowfullscreen>
+              </iframe>
+            </div>
+          </div>
+        </details>
+
+        <!-- No experimentales -->
+        <details class="accordion" data-keywords="no experimentales transeccional transversal longitudinal retrospectivo prospectivo">
+          <summary>1.2 🗂️ Diseños No Experimentales</summary>
+          <p>
+            No manipulan variables ni asignan aleatoriamente. Observan el fenómeno en su contexto natural.
+          </p>
+
+          <div class="grid grid--3">
+            <article class="mini">
+              <h4>📷 Transeccionales / Transversales</h4>
+              <p>Datos en un solo momento para describir e interrelacionar variables.</p>
+            </article>
+            <article class="mini">
+              <h4>⏳ Longitudinales</h4>
+              <p>Recolectan datos a través del tiempo para analizar cambios y tendencias.</p>
+            </article>
+            <article class="mini">
+              <h4>🗂️ Retrospectivos</h4>
+              <p>Usan datos históricos para estudiar eventos pasados.</p>
+            </article>
+          </div>
+
+          <div class="grid grid--2" style="margin-top:12px;">
+            <article class="mini">
+              <h4>📈 Prospectivos</h4>
+              <p>Siguen a los participantes hasta que ocurren los eventos (hacia adelante).</p>
+            </article>
+            <article class="mini">
+              <h4>📌 Clasificación transeccional</h4>
+              <p><b>Exploratorio</b>, <b>descriptivo</b> y <b>correlacional</b>.</p>
+            </article>
+          </div>
+
+          <!-- SVG timeline -->
+          <svg viewBox="0 0 400 80" xmlns="http://www.w3.org/2000/svg" style="width:100%;margin-top:14px;border-radius:10px">
+            <rect width="400" height="80" fill="#0d1628" rx="8"/>
+            <line x1="30" y1="40" x2="370" y2="40" stroke="#4dd4ff" stroke-width="2" stroke-opacity="0.4"/>
+            <circle cx="80" cy="40" r="8" fill="#4dd4ff" fill-opacity="0.7"/>
+            <circle cx="200" cy="40" r="8" fill="#4dd4ff" fill-opacity="0.7"/>
+            <circle cx="320" cy="40" r="8" fill="#4dd4ff" fill-opacity="0.7"/>
+            <text x="80" y="20" text-anchor="middle" fill="#7de8ff" font-size="9" font-family="system-ui">T1 (pasado)</text>
+            <text x="200" y="20" text-anchor="middle" fill="#7de8ff" font-size="9" font-family="system-ui">T2 (presente)</text>
+            <text x="320" y="20" text-anchor="middle" fill="#7de8ff" font-size="9" font-family="system-ui">T3 (futuro)</text>
+            <text x="80" y="60" text-anchor="middle" fill="#a7b3d1" font-size="8" font-family="system-ui">Retrospectivo</text>
+            <text x="200" y="60" text-anchor="middle" fill="#a7b3d1" font-size="8" font-family="system-ui">Transeccional</text>
+            <text x="320" y="60" text-anchor="middle" fill="#a7b3d1" font-size="8" font-family="system-ui">Prospectivo/Long.</text>
+            <polygon points="370,36 380,40 370,44" fill="#4dd4ff" fill-opacity="0.5"/>
+          </svg>
+        </details>
+      </div>
+    </section>
+
+    <!-- ====== CUALITATIVOS ====== -->
+    <section class="section" id="cualitativos">
+      <div class="section__head">
+        <h2>🗣️ Diseños Cualitativos</h2>
+        <p>Comprenden fenómenos humanos desde la perspectiva de los participantes.</p>
+      </div>
+
+      <div class="grid grid--2">
+        <div class="card card--accent">
+          <h3>✨ Enfoque cualitativo</h3>
+          <ul class="list">
+            <li>❌ No hay intervención</li>
+            <li>❌ No prueba hipótesis causales</li>
+            <li>🌍 El contexto importa</li>
+            <li>🎯 Muestra intencional</li>
+            <li>📝 Datos narrativos</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>🖼️ El ciclo de la investigación cualitativa</h3>
+          <!-- SVG: qualitative cycle -->
+          <svg class="svg-img" viewBox="0 0 340 200" xmlns="http://www.w3.org/2000/svg">
+            <rect width="340" height="200" fill="#0d1628" rx="10"/>
+            <!-- Circular arrows -->
+            <circle cx="170" cy="100" r="70" fill="none" stroke="#7c5cff" stroke-width="1" stroke-opacity="0.3" stroke-dasharray="6,4"/>
+            <!-- Steps -->
+            <g transform="translate(170,30)">
+              <circle r="22" fill="#7c5cff" fill-opacity="0.25" stroke="#7c5cff" stroke-width="1.5"/>
+              <text y="5" text-anchor="middle" fill="#b59fff" font-size="9" font-family="system-ui">Pregunta</text>
+            </g>
+            <g transform="translate(240,100)">
+              <circle r="22" fill="#7c5cff" fill-opacity="0.25" stroke="#7c5cff" stroke-width="1.5"/>
+              <text y="5" text-anchor="middle" fill="#b59fff" font-size="9" font-family="system-ui">Recolectar</text>
+            </g>
+            <g transform="translate(170,170)">
+              <circle r="22" fill="#7c5cff" fill-opacity="0.25" stroke="#7c5cff" stroke-width="1.5"/>
+              <text y="5" text-anchor="middle" fill="#b59fff" font-size="9" font-family="system-ui">Analizar</text>
+            </g>
+            <g transform="translate(100,100)">
+              <circle r="22" fill="#7c5cff" fill-opacity="0.25" stroke="#7c5cff" stroke-width="1.5"/>
+              <text y="5" text-anchor="middle" fill="#b59fff" font-size="9" font-family="system-ui">Interpretar</text>
+            </g>
+            <!-- Arrows -->
+            <path d="M185,50 Q220,60 222,78" fill="none" stroke="#7c5cff" stroke-width="1.5" marker-end="url(#arrQ)"/>
+            <path d="M235,122 Q220,155 195,160" fill="none" stroke="#7c5cff" stroke-width="1.5" marker-end="url(#arrQ)"/>
+            <path d="M148,162 Q120,150 112,122" fill="none" stroke="#7c5cff" stroke-width="1.5" marker-end="url(#arrQ)"/>
+            <path d="M107,78 Q120,55 150,40" fill="none" stroke="#7c5cff" stroke-width="1.5" marker-end="url(#arrQ)"/>
+            <defs>
+              <marker id="arrQ" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto">
+                <path d="M0,0 L6,3 L0,6 Z" fill="#7c5cff"/>
+              </marker>
+            </defs>
+          </svg>
+        </div>
+      </div>
+
+      <div class="accordions" data-section="cualitativos">
+
+        <details class="accordion" data-keywords="teoría fundamentada grounded theory codificación categorías análisis continuo teoría emergente">
+          <summary>2.1 🧠 Teoría Fundamentada</summary>
+          <p>
+            Genera teoría desde datos recopilados y analizados de forma sistemática.
+          </p>
+          <ul class="list">
+            <li>📥 Recolección de datos</li>
+            <li>🔤 Codificación y categorías</li>
+            <li>🔄 Análisis continuo</li>
+            <li>🎯 Teoría emergente</li>
+          </ul>
+          <div class="twoCols">
+            <div>
+              <h4>🎥 Enfoque cualitativo vs cuantitativo</h4>
+              <iframe
+                width="100%" height="210"
+                src="https://www.youtube.com/embed/6MNYua1vpY0"
+                title="Diferencias investigación cuantitativa, cualitativa y mixta"
+                frameborder="0"
+                allowfullscreen>
+              </iframe>
+            </div>
+            <div>
+              <h4>🎧 Audio: diseños cualitativos</h4>
+              <audio controls>
+                <source src="audio/teoria-cualitativa.mp3" type="audio/mpeg" />
+              </audio>
+              <p class="audio-label">🔊 Narración generada por síntesis de voz</p>
+            </div>
+          </div>
+        </details>
+
+        <details class="accordion" data-keywords="etnografía etnografico observación participante inmersión prolongada cultura comunidad rituales valores normas significados">
+          <summary>2.2 🌐 Etnográficos</summary>
+          <p>
+            Estudian culturas y comunidades con observación participante e inmersión prolongada.
+          </p>
+          <ul class="list">
+            <li>👀 El investigador pasa tiempo con el grupo</li>
+            <li>🧩 Observa prácticas y rituales</li>
+            <li>🤝 Participa en actividades</li>
+            <li>🎯 Interpreta valores y significados</li>
+          </ul>
+
+          <!-- SVG ethnography illustration -->
+          <svg viewBox="0 0 380 120" xmlns="http://www.w3.org/2000/svg" style="width:100%;border-radius:10px;margin-top:10px">
+            <rect width="380" height="120" fill="#0d1628" rx="8"/>
+            <!-- People figures -->
+            <g transform="translate(60,30)">
+              <circle cy="-10" r="10" fill="#7c5cff" fill-opacity="0.6"/>
+              <rect x="-8" y="2" width="16" height="22" rx="4" fill="#7c5cff" fill-opacity="0.4"/>
+              <text y="40" text-anchor="middle" fill="#b59fff" font-size="9" font-family="system-ui">Investigador</text>
+            </g>
+            <g transform="translate(140,30)">
+              <circle cy="-10" r="10" fill="#4dd4ff" fill-opacity="0.6"/>
+              <rect x="-8" y="2" width="16" height="22" rx="4" fill="#4dd4ff" fill-opacity="0.4"/>
+              <text y="40" text-anchor="middle" fill="#7de8ff" font-size="9" font-family="system-ui">Comunidad A</text>
+            </g>
+            <g transform="translate(200,30)">
+              <circle cy="-10" r="10" fill="#4dd4ff" fill-opacity="0.5"/>
+              <rect x="-8" y="2" width="16" height="22" rx="4" fill="#4dd4ff" fill-opacity="0.3"/>
+              <text y="40" text-anchor="middle" fill="#7de8ff" font-size="9" font-family="system-ui">Comunidad B</text>
+            </g>
+            <g transform="translate(260,30)">
+              <circle cy="-10" r="10" fill="#4dd4ff" fill-opacity="0.4"/>
+              <rect x="-8" y="2" width="16" height="22" rx="4" fill="#4dd4ff" fill-opacity="0.2"/>
+              <text y="40" text-anchor="middle" fill="#7de8ff" font-size="9" font-family="system-ui">Comunidad C</text>
+            </g>
+            <!-- Arrow -->
+            <path d="M78,20 L120,20" stroke="#7c5cff" stroke-width="1.5" marker-end="url(#arrE)"/>
+            <text x="98" y="16" text-anchor="middle" fill="#a7b3d1" font-size="8" font-family="system-ui">observa</text>
+            <defs>
+              <marker id="arrE" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto">
+                <path d="M0,0 L6,3 L0,6 Z" fill="#7c5cff"/>
+              </marker>
+            </defs>
+            <!-- Notes box -->
+            <rect x="300" y="10" width="68" height="80" rx="6" fill="#7c5cff" fill-opacity="0.1" stroke="#7c5cff" stroke-width="1" stroke-dasharray="3,2"/>
+            <text x="334" y="30" text-anchor="middle" fill="#b59fff" font-size="9" font-weight="bold" font-family="system-ui">📓 Notas</text>
+            <text x="334" y="46" text-anchor="middle" fill="#a7b3d1" font-size="8" font-family="system-ui">de campo</text>
+            <text x="334" y="62" text-anchor="middle" fill="#a7b3d1" font-size="8" font-family="system-ui">Patrones</text>
+            <text x="334" y="78" text-anchor="middle" fill="#a7b3d1" font-size="8" font-family="system-ui">Significados</text>
+            <text x="190" y="110" text-anchor="middle" fill="#a7b3d1" font-size="9" font-family="system-ui">Inmersión prolongada en el campo</text>
+          </svg>
+
+          <div class="example">
+            <b>Tip:</b> escribe notas de campo y analiza patrones de interacción.
+          </div>
+        </details>
+
+        <details class="accordion" data-keywords="narrativos historias personales relatos de vida autobiografías diarios entrevistas estructura temas recurrentes">
+          <summary>2.3 📖 Narrativos</summary>
+          <p>
+            Se centran en historias personales y experiencias: relatos, diarios, entrevistas, etc.
+          </p>
+
+          <div class="twoCols">
+            <ul class="list">
+              <li>📚 Relatos de vida</li>
+              <li>🧠 Analiza significados</li>
+              <li>🧭 Considera estructura y temas</li>
+            </ul>
+            <div>
+              <!-- SVG: narrative book -->
+              <svg viewBox="0 0 200 130" xmlns="http://www.w3.org/2000/svg" style="width:100%;border-radius:10px;margin-top:6px">
+                <rect width="200" height="130" fill="#0d1628" rx="8"/>
+                <rect x="30" y="15" width="80" height="100" rx="4" fill="#7c5cff" fill-opacity="0.2" stroke="#7c5cff" stroke-width="1.5"/>
+                <rect x="34" y="19" width="72" height="4" rx="2" fill="#b59fff" fill-opacity="0.6"/>
+                <rect x="34" y="28" width="60" height="3" rx="2" fill="#a7b3d1" fill-opacity="0.5"/>
+                <rect x="34" y="35" width="65" height="3" rx="2" fill="#a7b3d1" fill-opacity="0.5"/>
+                <rect x="34" y="42" width="55" height="3" rx="2" fill="#a7b3d1" fill-opacity="0.5"/>
+                <rect x="34" y="49" width="68" height="3" rx="2" fill="#a7b3d1" fill-opacity="0.5"/>
+                <rect x="34" y="60" width="50" height="3" rx="2" fill="#a7b3d1" fill-opacity="0.4"/>
+                <rect x="34" y="67" width="64" height="3" rx="2" fill="#a7b3d1" fill-opacity="0.4"/>
+                <rect x="34" y="74" width="58" height="3" rx="2" fill="#a7b3d1" fill-opacity="0.4"/>
+                <text x="130" y="50" text-anchor="middle" fill="#b59fff" font-size="10" font-family="system-ui">📖 Historia</text>
+                <text x="130" y="68" text-anchor="middle" fill="#a7b3d1" font-size="9" font-family="system-ui">personal</text>
+                <text x="130" y="85" text-anchor="middle" fill="#a7b3d1" font-size="9" font-family="system-ui">del sujeto</text>
+                <text x="100" y="120" text-anchor="middle" fill="#a7b3d1" font-size="8" font-family="system-ui">Relatos de vida</text>
+              </svg>
+            </div>
+          </div>
+        </details>
+
+        <details class="accordion" data-keywords="investigación acción acción observación reflexión ciclos planificación participación solución problemas prácticos">
+          <summary>2.4 🔁 Investigación-Acción</summary>
+          <p>
+            Enfoque participativo para resolver problemas prácticos con ciclos:
+            <b>planificación → acción → observación → reflexión</b>.
+          </p>
+          <ul class="list">
+            <li>🤝 Participantes e investigadores trabajan juntos</li>
+            <li>🛠️ Se diseñan soluciones</li>
+            <li>📊 Se evalúan resultados</li>
+            <li>🔁 Ciclos para mejorar continuamente</li>
+          </ul>
+
+          <h4>🎥 Metodología de investigación — Dr. Hernández Sampieri</h4>
+          <iframe
+            width="100%" height="230"
+            src="https://www.youtube.com/embed/cMb-cWLtgR8"
+            title="El planteamiento del problema define la ruta de la investigación"
+            frameborder="0"
+            allowfullscreen>
+          </iframe>
+        </details>
+
+      </div>
+    </section>
+
+    <!-- ====== MIXTOS ====== -->
+    <section class="section" id="mixtos">
+      <div class="section__head">
+        <h2>🔀 Diseños Mixtos</h2>
+        <p>Combinan cuantitativo y cualitativo en un mismo estudio.</p>
+      </div>
+
+      <div class="grid grid--2">
+        <div class="card card--accent">
+          <h3>Idea clave</h3>
+          <p>
+            Se combina el <b>rigor numérico</b> con la <b>riqueza interpretativa</b>.
+          </p>
+          <ul class="list">
+            <li>✅ Usa ambos enfoques</li>
+            <li>⏱️ Secuencial o simultáneo</li>
+            <li>🧩 Requiere claridad de objetivos</li>
+            <li>💰 Más tiempo y recursos</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>🖼️ Integración de enfoques mixtos</h3>
+          <!-- SVG: Venn diagram mixed -->
+          <svg class="svg-img" viewBox="0 0 340 190" xmlns="http://www.w3.org/2000/svg">
+            <rect width="340" height="190" fill="#0d1628" rx="10"/>
+            <circle cx="130" cy="95" r="70" fill="#4dd4ff" fill-opacity="0.12" stroke="#4dd4ff" stroke-width="1.5"/>
+            <circle cx="210" cy="95" r="70" fill="#7c5cff" fill-opacity="0.12" stroke="#7c5cff" stroke-width="1.5"/>
+            <text x="90" y="75" text-anchor="middle" fill="#4dd4ff" font-size="11" font-weight="bold" font-family="system-ui">CUANTITATIVO</text>
+            <text x="90" y="92" text-anchor="middle" fill="#a7b3d1" font-size="9" font-family="system-ui">Datos numéricos</text>
+            <text x="90" y="107" text-anchor="middle" fill="#a7b3d1" font-size="9" font-family="system-ui">Medición</text>
+            <text x="90" y="122" text-anchor="middle" fill="#a7b3d1" font-size="9" font-family="system-ui">Estadística</text>
+            <text x="250" y="75" text-anchor="middle" fill="#b59fff" font-size="11" font-weight="bold" font-family="system-ui">CUALITATIVO</text>
+            <text x="250" y="92" text-anchor="middle" fill="#a7b3d1" font-size="9" font-family="system-ui">Significados</text>
+            <text x="250" y="107" text-anchor="middle" fill="#a7b3d1" font-size="9" font-family="system-ui">Narrativas</text>
+            <text x="250" y="122" text-anchor="middle" fill="#a7b3d1" font-size="9" font-family="system-ui">Contexto</text>
+            <!-- Intersection -->
+            <text x="170" y="88" text-anchor="middle" fill="#ff6eb4" font-size="11" font-weight="bold" font-family="system-ui">MIXTO</text>
+            <text x="170" y="103" text-anchor="middle" fill="#ffb3d4" font-size="8.5" font-family="system-ui">Integración</text>
+            <text x="170" y="116" text-anchor="middle" fill="#ffb3d4" font-size="8.5" font-family="system-ui">Complemento</text>
+            <text x="170" y="172" text-anchor="middle" fill="#a7b3d1" font-size="9" font-family="system-ui">Triangulación metodológica</text>
+          </svg>
+        </div>
+      </div>
+
+      <div class="accordions" data-section="mixtos">
+        <details class="accordion" data-keywords="secuencial explicativo cuantitativo cualitativo integrar resultados explicar">
+          <summary>3.1 🧾 Secuencial explicativo (Cuantitativo → Cualitativo)</summary>
+          <ol class="list">
+            <li>📊 Primero: medir y analizar cuantitativo</li>
+            <li>🗣️ Luego: cualitativos para explicar o ampliar resultados</li>
+          </ol>
+          <div class="example">
+            <b>Ejemplo:</b> medir estrés académico (encuesta) y luego entrevistar para conocer causas.
+          </div>
+        </details>
+
+        <details class="accordion" data-keywords="secuencial exploratorio cualitativo cuantitativo generalizar hallazgos">
+          <summary>3.2 🔍 Secuencial exploratorio (Cualitativo → Cuantitativo)</summary>
+          <ol class="list">
+            <li>🗣️ Comienza con cualitativos para explorar el fenómeno</li>
+            <li>📊 Luego aplica cuantitativos para generalizar hallazgos</li>
+          </ol>
+          <div class="example">
+            <b>Ejemplo:</b> explorar habilidades digitales con entrevistas; después encuesta a mayor escala.
+          </div>
+        </details>
+
+        <details class="accordion" data-keywords="concurrente simultáneo cuantitativo cualitativo al mismo tiempo">
+          <summary>3.3 ⚡ Concurrente</summary>
+          <p>
+            Se trabajan componentes cuantitativos y cualitativos al mismo tiempo.
+          </p>
+          <div class="example">
+            <b>Ejemplo:</b> evaluar calidad de vida de mascotas: observación cualitativa y análisis cuantitativo.
+          </div>
+        </details>
+
+        <details class="accordion" data-keywords="anidados uno dentro del otro componente encapsulado variable dentro de otra">
+          <summary>3.4 📦 Anidados</summary>
+          <p>
+            Un componente está "encapsulado" dentro del otro (jerarquía interna).
+          </p>
+          <div class="example">
+            <b>Ejemplo:</b> productividad (general) encapsula el efecto del sueldo (subproceso).
+          </div>
+          <div class="twoCols">
+            <div>
+              <h4>🎧 Audio: diseños mixtos</h4>
+              <audio controls>
+                <source src="audio/teoria-mixta.mp3" type="audio/mpeg" />
+              </audio>
+              <p class="audio-label">🔊 Narración generada por síntesis de voz</p>
+            </div>
+            <div>
+              <h4>🎥 La Investigación Mixta</h4>
+              <iframe
+                width="100%" height="210"
+                src="https://www.youtube.com/embed/05m4b4BIJZs"
+                title="La Investigación Mixta - Metodología"
+                frameborder="0"
+                allowfullscreen>
+              </iframe>
+            </div>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <!-- Resumen -->
+    <section class="section" id="resumen">
+      <div class="section__head">
+        <h2>✅ Resumen rápido</h2>
+        <p>Repasa lo esencial por enfoque.</p>
+      </div>
+
+      <div class="grid grid--3">
+        <article class="card">
+          <h3>📊 Cuantitativos</h3>
+          <p>Experimentales (pre/cuasi/verdadero) y no experimentales (transeccional, longitudinal, retrospectivo, prospectivo).</p>
+        </article>
+        <article class="card">
+          <h3>🗣️ Cualitativos</h3>
+          <p>Teoría fundamentada, etnografía, narrativos e investigación-acción.</p>
+        </article>
+        <article class="card">
+          <h3>🔀 Mixtos</h3>
+          <p>Secuencial explicativo/exploratorio, concurrente y anidados.</p>
+        </article>
+      </div>
+
+      <!-- Summary video -->
+      <div class="card" style="margin-top:16px;">
+        <h3>🎥 Video resumen: diferencias entre los 3 enfoques</h3>
+        <iframe
+          width="100%" height="300"
+          src="https://www.youtube.com/embed/91ScOjrE8yY"
+          title="Metodología de investigación. Enfoque cuantitativo, cualitativo y mixto"
+          frameborder="0"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+      <div class="cta">
+        <a class="btn" href="#inicio">⬆️ Volver arriba</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__wrap">
+      <p>📌 Web educativa — "El diseño de la investigación". Imágenes generadas por IA · Audios por síntesis de voz · Videos de YouTube.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
